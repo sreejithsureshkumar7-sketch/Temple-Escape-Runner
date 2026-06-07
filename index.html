@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Temple Escape Runner 3D</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game">
+    <div class="hud">
+      <button id="pauseBtn">Ⅱ</button>
+      <div class="box"><span>Score</span><b id="score">0</b></div>
+      <div class="box"><span>Coins</span><b id="coins">0</b></div>
+      <div class="box"><span>Best</span><b id="best">0</b></div>
+    </div>
+
+    <div id="startScreen" class="screen">
+      <div class="panel">
+        <h1>Temple Escape 3D</h1>
+        <p>Temple Run style 3D endless runner using HTML, CSS and JavaScript.</p>
+        <button id="startBtn">Start Game</button>
+        <small>Keyboard: ← → move, ↑ jump, ↓ slide<br>Mobile: swipe or buttons</small>
+      </div>
+    </div>
+
+    <div id="overScreen" class="screen hidden">
+      <div class="panel">
+        <h1>Game Over</h1>
+        <p id="finalText">Score: 0</p>
+        <button id="restartBtn">Restart</button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="leftBtn">←</button>
+      <button id="jumpBtn">↑</button>
+      <button id="slideBtn">↓</button>
+      <button id="rightBtn">→</button>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
