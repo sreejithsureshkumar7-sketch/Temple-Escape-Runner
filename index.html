@@ -7,13 +7,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="game">
-    <div class="hud">
-      <button id="pauseBtn">Ⅱ</button>
-      <div class="box"><span>Score</span><b id="score">0</b></div>
-      <div class="box"><span>Coins</span><b id="coins">0</b></div>
-      <div class="box"><span>Best</span><b id="best">0</b></div>
-    </div>
+ <div class="hud">
+  <button id="pauseBtn">Ⅱ</button>
+  <button id="soundBtn">🔊</button>
+
+  <div class="box"><span>Score</span><b id="score">0</b></div>
+  <div class="box"><span>Coins</span><b id="coins">0</b></div>
+  <div class="box"><span>Lives</span><b id="lives">3</b></div>
+  <div class="box"><span>Best</span><b id="best">0</b></div>
+</div>
+
+<div class="powerbar">
+  <div id="shieldTag" class="tag hidden">🛡 Shield</div>
+  <div id="magnetTag" class="tag hidden">🧲 Magnet</div>
+  <div id="boostTag" class="tag hidden">⚡ Boost</div>
+</div>
 
     <div id="startScreen" class="screen">
       <div class="panel">
