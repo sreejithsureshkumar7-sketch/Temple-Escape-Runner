@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Temple Escape Runner 3D</title>
+  <title>Temple Escape Runner Level 4 Pro</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- <div class="hud">
-  <button id="pauseBtn">Ⅱ</button>
-  <button id="soundBtn">🔊</button>
+  <div id="game">
+    <div class="hud">
+      <button id="pauseBtn">Ⅱ</button>
+      <button id="soundBtn">🔊</button>
+      <div class="box"><span>Score</span><b id="score">0</b></div>
+      <div class="box"><span>Coins</span><b id="coins">0</b></div>
+      <div class="box"><span>Lives</span><b id="lives">3</b></div>
+      <div class="box"><span>Best</span><b id="best">0</b></div>
+    </div>
 
-  <div class="box"><span>Score</span><b id="score">0</b></div>
-  <div class="box"><span>Coins</span><b id="coins">0</b></div>
-  <div class="box"><span>Lives</span><b id="lives">3</b></div>
-  <div class="box"><span>Best</span><b id="best">0</b></div>
-</div>
-
-<div class="powerbar">
-  <div id="shieldTag" class="tag hidden">🛡 Shield</div>
-  <div id="magnetTag" class="tag hidden">🧲 Magnet</div>
-  <div id="boostTag" class="tag hidden">⚡ Boost</div>
-</div>
+    <div class="powerbar">
+      <div id="shieldTag" class="tag hidden">🛡 Shield</div>
+      <div id="magnetTag" class="tag hidden">🧲 Magnet</div>
+      <div id="boostTag" class="tag hidden">⚡ Boost</div>
+    </div>
 
     <div id="startScreen" class="screen">
       <div class="panel">
-        <h1>Temple Escape 3D</h1>
-        <p>Temple Run style 3D endless runner using HTML, CSS and JavaScript.</p>
+        <h1>Temple Escape Pro</h1>
+        <p>Level 4: Powerups, lives, shield, magnet, speed boost and pro UI.</p>
         <button id="startBtn">Start Game</button>
-        <small>Keyboard: ← → move, ↑ jump, ↓ slide<br>Mobile: swipe or buttons</small>
+        <small>Desktop: ← → move, ↑ jump, ↓ slide<br>Mobile: swipe or buttons</small>
       </div>
     </div>
 
@@ -37,6 +37,13 @@
         <h1>Game Over</h1>
         <p id="finalText">Score: 0</p>
         <button id="restartBtn">Restart</button>
+      </div>
+    </div>
+
+    <div id="pauseScreen" class="screen hidden">
+      <div class="panel">
+        <h1>Paused</h1>
+        <button id="resumeBtn">Resume</button>
       </div>
     </div>
 
